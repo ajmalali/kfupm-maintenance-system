@@ -1,2 +1,2 @@
-# kfupm-maintenance-system
-# Moiz Was Here 
+# Guidelines
+Write anything here which I should know.
