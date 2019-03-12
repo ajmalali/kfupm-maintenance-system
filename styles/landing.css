@@ -1,0 +1,16 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a.nav-link {
+    margin-right: 20px;
+    text-transform: capitalize;
+}
+
+header.bg-primary {
+    background-color: rgb(1, 96, 198) !important;
+}
