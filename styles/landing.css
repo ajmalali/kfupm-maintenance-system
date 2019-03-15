@@ -20,6 +20,13 @@ div.card {
     transition: 0.3s;
     padding: 5px;
     height: 430px;
+    max-width: 350px;
+}
+
+div.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 div.card:hover {
