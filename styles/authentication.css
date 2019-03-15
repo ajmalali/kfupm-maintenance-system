@@ -1,0 +1,44 @@
+body {
+    background: #f8f8f8;
+    padding: 40px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tab {
+    font-size: 25px;
+    padding-bottom: 5px;
+    margin: 0 15px 10px 0;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 150ms;
+}
+
+.tab:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/*Removes the radio button*/
+.sign-in, .sign-up {
+    display: none;
+}
+
+.sign-in:checked + .tab,
+.sign-up:checked + .tab {
+    border-color: #1161ee;
+}
+
+.card {
+    min-width: 550px;
+    position: relative;
+}
+
+#back {
+    margin-left: 30px;
+}
+
+#back:hover {
+    transform: scale(1.1);
+}
