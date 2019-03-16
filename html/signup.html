@@ -18,21 +18,19 @@
             <div class="card w-50 p-4 mx-auto shadow p-3 bg-white rounded">
                 <div class="card-body">
                     <div class="option mb-3">
-                        <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
-                        <label for="tab-1" class="tab">Sign Up</label>
-                        <input id="tab-2" type="radio" name="tab" class="sign-up">
-                        <label for="tab-2" class="tab">Sign In</label>
+                        <a href="#" class="tab active">Sign Up</a>
+                        <a href="signin.html" class="tab">Sign In</a>
                     </div>
                     <hr>
                     <div id="signup-card">
-                        <form method="POST" class="register-form" id="signup-form">
+                        <form method="POST" class="register-form" id="auth-form">
                             <div class="form-group">
                                 <label for="name">Full Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="John Smith" required>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="John Smith" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
                                        placeholder="john.smith@example.com" required>
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with
                                     anyone else.
@@ -40,21 +38,21 @@
                             </div>
                             <div class="form-group">
                                 <label for="id">ID Number</label>
-                                <input type="text" class="form-control" id="id" placeholder="201XXXXXX" required>
+                                <input type="text" class="form-control" id="id" name="id" placeholder="201XXXXXX" required>
                             </div>
                             <div class="form-group">
                                 <label for="password">Phone Number</label>
-                                <input type="tel" class="form-control" id="phone" placeholder="05XXXXXXXX"
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="05XXXXXXXX"
                                        pattern="05[0-9]{8}" oninvalid="setCustomValidity('Please enter a number in the format 05XXXXXXXX')" required>
                             </div>
                             <div class="form-group">
                                 <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
                             </div>
                             <div class="form-group">
                                 <label for="re-password">Confirm Password</label>
                                 <input type="password" class="form-control" id="re-password"
-                                       placeholder="Confirm Password" required>
+                                       placeholder="Confirm Password" name="re-password" required>
                             </div>
                             <div class="form-group form-check">
                                 <input type="checkbox" class="form-check-input" id="tandc" required>
@@ -64,20 +62,7 @@
                             <button type="submit" class="btn btn-primary btn-block mt-4 p-2">Register</button>
                         </form>
                     </div>
-                    <div id="signin-card">
-                        <form method="POST" class="register-form" id="signin-form">
-                            <div class="form-group">
-                                <label for="id">ID Number</label>
-                                <input type="text" class="form-control" id="id" placeholder="201XXXXXX" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" placeholder="Password" required>
-                            </div>
-                            <a href="#">Forgot your password?</a>
-                            <button type="submit" class="btn btn-primary btn-block mt-4 p-2">Sign In</button>
-                        </form>
-                    </div>
+
                 </div>
             </div>
         </div>
