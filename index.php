@@ -16,7 +16,7 @@
         <!--Navigation-->
         <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">KFUPM Maintenance</a>
+                <a class="navbar-brand" href="index.php">KFUPM Maintenance</a>
                 <!--Collapse button-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent"
@@ -74,98 +74,7 @@
             </div>
         </div>
 
-        <!--Services Offered-->
-        <div class="container" id="services-offered">
-            <div class="row">
-                <div class="col-md-12 mb-5">
-                    <h2 class="display-4">Services Offered</h2>
-                    <hr>
-                    <p>We offer the following services</p>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="card">
-                                <img src="images/electricity.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Electricity</h5>
-                                    <p class="card-text">Circuits, wires, plugs, switches all require maintenance and
-                                        check-ups on the regular in order to ensure that everything is running properly
-                                        and plugged appropriately.</p>
-                                    <div class="text-center">
-                                        <a href="#" class="btn btn-primary col-md-8 mt-3">Request Service</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="card">
-                                <img src="images/plumbing.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Plumbing</h5>
-                                    <p class="card-text">Regular checkups are important if you want to stay ahead of any
-                                        problems before they arise such as leaks or blockages.</p>
-                                    <div class="text-center">
-                                        <a href="#" class="btn btn-primary col-md-8 mt-3">Request Service</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="card">
-                                <img src="images/carpentry.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Carpentry</h5>
-                                    <p class="card-text">Installing furniture and creating wood decorations and
-                                        furniture</p>
-                                    <div class="text-center">
-                                        <a href="#" class="btn btn-primary col-md-8 mt-3">Request Service</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="card">
-                                <img src="images/ac.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Air Conditioning</h5>
-                                    <p class="card-text">AC outages are a major inconvenience, however, they are a
-                                        regular occurrence.</p>
-                                    <div class="text-center">
-                                        <a href="#" class="btn btn-primary col-md-8 mt-3">Request Service</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="card">
-                                <img src="images/painting.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Painting</h5>
-                                    <p class="card-text">Over time paint can chip up or loose a bit of colour. This of
-                                        course is unacceptable to our customers, </p>
-                                    <div class="text-center">
-                                        <a href="#" class="btn btn-primary col-md-8 mt-3">Request Service</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="card">
-                                <img src="images/insect-control.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title text-center">Insect Control</h5>
-                                    <p class="card-text">There are a lot of bugs and ants that are hiding around your
-                                        house which could lead to harm for you and your family,</p>
-                                    <div class="text-center">
-                                        <a href="#" class="btn btn-primary col-md-8 mt-3">Request Service</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php require ('servicesOffered.php'); ?>
 
         <div class="container" id="how-it-works">
             <div class="row">
