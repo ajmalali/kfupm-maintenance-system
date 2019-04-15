@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e692440-d778-4923-bdd3-24dff2130978" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/requester/createRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/requester/getService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/requester/user-dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/admin/requests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/signIn/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/signUp/createUser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/user-dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/requester/user-dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/authentication.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servicesOffered.php" beforeDir="false" afterPath="$PROJECT_DIR$/servicesOffered.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/signIn/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/signIn/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/signUp/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/signUp/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/signin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/signup.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,11 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/requester/user-dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2246">
-              <caret line="127" column="42" selection-start-line="127" selection-start-column="42" selection-end-line="127" selection-end-column="42" />
+            <state relative-caret-position="84">
+              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -54,10 +53,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/signIn/signin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/signUp/createUser.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/signUp/signup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/user-dashboard.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -75,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/scripts/authentication.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -93,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/html/requester/getService.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
-              <caret line="1" column="37" lean-forward="true" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+              <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -102,7 +124,7 @@
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/471fc104-fe9c-4655-a0bf-f4b65a6db622/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -163,6 +185,8 @@
         <option value="$PROJECT_DIR$/html/requester/createRequest.php" />
         <option value="$PROJECT_DIR$/html/requester/user-dashboard.js" />
         <option value="$PROJECT_DIR$/html/requester/user-dashboard.php" />
+        <option value="$PROJECT_DIR$/html/signIn/signin.html" />
+        <option value="$PROJECT_DIR$/html/signUp/signup.html" />
       </list>
     </option>
   </component>
@@ -202,6 +226,18 @@
               <item name="Project" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="requester" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="signIn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="signUp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Project" type="b2602c69:ProjectViewProjectNode" />
@@ -277,12 +313,12 @@
       <workItem from="1555267566763" duration="179000" />
       <workItem from="1555267859358" duration="170000" />
       <workItem from="1555268070540" duration="1214000" />
-      <workItem from="1555276321707" duration="17920000" />
+      <workItem from="1555276321707" duration="18698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64857000" />
+    <option name="totallyTimeSpent" value="65635000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="0" />
@@ -445,14 +481,14 @@
     <entry file="file://$PROJECT_DIR$/scripts/authentication.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/requester/getService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
-          <caret line="1" column="37" lean-forward="true" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -473,25 +509,42 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/471fc104-fe9c-4655-a0bf-f4b65a6db622/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/user-dashboard.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/requester/user-dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2246">
-          <caret line="127" column="42" selection-start-line="127" selection-start-column="42" selection-end-line="127" selection-end-column="42" />
+        <state relative-caret-position="84">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/signUp/createUser.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/signIn/signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/signUp/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
         </state>
       </provider>
     </entry>
