@@ -30,10 +30,10 @@
                 <a class="nav-item nav-link" href="#about-us">About</a>
                 <a class="nav-item nav-link" href="#services-offered">Services Offered</a>
                 <a class="nav-item nav-link" href="#how-it-works">How it works</a>
-                <a class="nav-item nav-link" href="html/signup.html">
+                <a class="nav-item nav-link" href="html/signUp/signup.html">
                     <button class="btn btn-outline-info btn-sm" type="button">Sign up</button>
                 </a>
-                <a class="nav-item nav-link" href="html/signin.html">
+                <a class="nav-item nav-link" href="html/signIn/signin.html">
                     <button class="btn btn-outline-primary btn-sm" type="button">Log in</button>
                 </a>
             </div>
