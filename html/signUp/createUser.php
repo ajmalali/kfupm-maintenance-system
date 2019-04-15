@@ -1,7 +1,7 @@
 <?php
-
     require_once ("../../config.php");
     session_start();
+
     $name = $_POST["name"];
     $email = $_POST["email"];
     $id = $_POST["id"];
@@ -31,5 +31,3 @@
             return false;
         }
     }
-
-?>

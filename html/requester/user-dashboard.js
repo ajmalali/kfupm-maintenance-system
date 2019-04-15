@@ -1,3 +1,20 @@
+function initCancelButtons() {
+    $(document).on('click', '.cancel',function () {
+        let requestCard = $(this).parents('div.col-lg-4 ')[0];
+        let requestText = $(requestCard).find('p.card-text')[0].innerHTML;
+        let requestID = requestText.substr(-1);
+
+        $.ajax({
+            type: "POST",
+            url: "cancelRequest.php",
+            data: {"requestID": requestID},
+            success: function () {
+                $(requestCard).fadeOut();
+            }
+        });
+    });
+}
+
 function init() {
 
     $('#serviceType').on('change', function () {
@@ -19,6 +36,8 @@ function init() {
         let requestData = getRequestData();
         createRequest(requestData);
     });
+
+    initCancelButtons();
 }
 
 function createRequest(requestData) {
@@ -28,6 +47,7 @@ function createRequest(requestData) {
         data: requestData,
         success: function (result) {
             alert("Your request has been sent.");
+            $('#ongoing-requests').append(result);
         }
     });
 }
@@ -40,7 +60,6 @@ function getRequestData() {
     data['buildingNumber'] = $('#buildingNumber').val();
     data['roomNumber'] = $('#roomNumber').val();
     data['comment'] = $('#comment').val();
-    data['userID'] = sessionStorage.getItem('id');
     return data;
 }
 

@@ -55,6 +55,7 @@
                         <select name="serviceType" id="serviceType" class="form-control" required>
                             <option value="" disabled selected>Select a service type</option>
                             <?php
+                                session_start();
                                 require_once('../../config.php');
 
                                 $sql = "SELECT name, type_id FROM servicetype";
@@ -114,8 +115,9 @@
     </div>
 </div>
 
-<!--Ongoing Requests-->
-<div class="container mb-5">
+<?php //require ('ongoingRequests.php'); ?>
+
+<div class="container mb-4">
     <div class="row mt-3">
         <div class="col-sm-12">
             <h2 class="display-5">Your ongoing requests</h2>
@@ -124,58 +126,29 @@
     </div>
 
     <div class="row mt-3">
-        <div class="col-sm">
-            <div class="card bg-light mb-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Light Repair</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Request Status : Processing</h6>
-                    <p class="card-text">Expected Time : 7:00 PM</p>
-                    <a href="#" class="btn btn-primary">Rate </a>
-                    <a href="#" class="btn btn-danger">Cancel Request</a>
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-2">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title">Covering surfaces with primer and undercoat</h5>
+                    <h6 class="card-subtitle mb-3 text-muted">Requested at: 10-3-2019</h6>
+                    <p class="card-text">Request ID: 1</p>
+                    <p class="card-text">Status: Processing</p>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <button class="btn btn-primary w-100 rate">Rate</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-danger w-100 cancel">Cancel</button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-
-        <div class="col-sm">
-            <div class="card bg-light mb-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Door Repair</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Request Status : Processing</h6>
-                    <p class="card-text">Expected Time : 2:00 PM</p>
-                    <a href="#" class="btn btn-primary">Rate </a>
-                    <a href="#" class="btn btn-danger">Cancel Request</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm">
-            <div class="card bg-light mb-3 " style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">AC Repair</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Request Status : Completed</h6>
-                    <p class="card-text">Expected Time : 6:00 PM</p>
-                    <a href="#" class="btn btn-primary">Rate </a>
-                    <a href="#" class="btn btn-danger">Cancel Request</a>
-                </div>
-            </div>
-        </div>
-
     </div>
 </div>
 
-<!--Previous Requests-->
-<div class="container mb-5">
-    <div class="row mt-3">
-        <div class="col-sm-12">
-            <h2 class="display-5">Your previous requests</h2>
-            <hr>
-        </div>
-    </div>
-
-    <div class="row mt-3">
-
-    </div>
-</div>
+<?php include ('previousRequests.php'); ?>
 
 <script
         src="https://code.jquery.com/jquery-3.4.0.min.js"

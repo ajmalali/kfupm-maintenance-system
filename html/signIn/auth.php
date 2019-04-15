@@ -23,6 +23,6 @@
         $_SESSION['name'] = $name;
         echo $url;
     } else {
-        echo "Wrong User ID or Password";
+        echo 0;
     }
 
