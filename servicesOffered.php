@@ -7,7 +7,7 @@
             <p class="description mb-3">We believe our workers that they will give great and safe services to the customers. We offer the following services:</p>
             <div class="row">
                 <?php
-                    include_once('config.php');
+                    require_once ('config.php');
 
                     $sql = "SELECT name, image, description FROM servicetype";
                     $result = mysqli_query($link, $sql);
