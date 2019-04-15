@@ -4,7 +4,7 @@
         <div class="col-md-12 mb-5">
             <h2 class="display-4">Services Offered</h2>
             <hr>
-            <p>We offer the following services</p>
+            <p class="description mb-3">We believe our workers that they will give great and safe services to the customers. We offer the following services:</p>
             <div class="row">
                 <?php
                     include_once('config.php');
@@ -22,11 +22,8 @@
                                 <div class=\"card\">
                                     <img src=\"$image\" class=\"card-img-top\" alt=\"...\">
                                              <div class=\"card-body text-center\">
-                                    <h5 class=\"card-title\">$name</h5>
+                                    <h5 class=\"card-title \">$name</h5>
                                     <p class=\"card-text\">$description.</p>
-                                    <div class=\"text-center\">
-                                        <a href=\"#\" class=\"btn btn-primary col-md-8 mt-3\">Request Service</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>";

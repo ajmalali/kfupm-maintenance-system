@@ -1,17 +1,29 @@
+body {
+    font-size: 1.1rem;
+}
+
 a.nav-link {
     margin-right: 20px;
     text-transform: capitalize;
 }
 
-header.bg-primary {
-    background-color: rgb(1, 96, 198) !important;
+header.overlay {
+    background-repeat: no-repeat;
+    background-image: url("http://maintenance-service-dubai.com/wp-content/uploads/revslider/fixology-mainslider/banner-bg3.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
 }
 
 div.card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     padding: 5px;
-    height: 430px;
+    height: 350px;
     max-width: 350px;
 }
 
@@ -25,10 +37,28 @@ div.card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-div.card img {
+.card-img-top {
     width: 40%;
     background-size: cover;
     max-width: 100%;
-    height: 35%;
     margin: 5px auto;
 }
+
+h2.display-4 {
+    font-size: 50px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p.description {
+    text-align: center;
+}
+
+a.active {
+    border-bottom: 1px solid white;
+}
+
+/*#login {*/
+/*    border: 1px solid blue;*/
+/*}*/
