@@ -22,7 +22,7 @@ function addUsers() {
 }
 
 // When the user clicks on the Remove BUtton
-  $('.btn-danger').click( function() {
+/*  $('.btn-danger').click( function() {
     // get the ID of the receptinist deleted
     var row = $(this).parent().parent();
     var id = $(row).children('td')[0].innerHTML;
@@ -39,4 +39,19 @@ function addUsers() {
     });
   }
 
-);
+);   8=*/
+function deleteRow(id) {
+  $.ajax({
+    type : "POST",
+    url : "delete-users.php",
+    data : {"id" : id},
+    success : function (result) {
+      alert(result);
+      var sr = id;
+      sr = '#' + sr;
+      // remove from front end
+      $(sr).fadeOut(1000);
+    }
+
+  });
+}

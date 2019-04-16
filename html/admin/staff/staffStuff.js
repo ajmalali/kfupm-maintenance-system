@@ -17,7 +17,7 @@ function addStaff() {
 }
 
 // When the user clicks on the Remove BUtton
-  $('.btn-danger').click( function() {
+/*  $('.btn-danger').click( function() {
     // get the ID of the receptinist deleted
     var row = $(this).parent().parent();
     var id = $(row).children('td')[0].innerHTML;
@@ -34,7 +34,7 @@ function addStaff() {
     });
   }
 
-);
+);   */
 
 function deleteRow(id) {
   $.ajax({
