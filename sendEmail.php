@@ -15,6 +15,22 @@
 // Load Composer's autoloader
     require 'vendor/autoload.php';
     $message = "<h2>Your maintenance request is completed!</h2>";
+    $message .= "<br>";
+    $message .= "<h3>Request details:</h3>";
+
+    $sql = "SELECT requested_at, service, comments FROM request  inner join service s on request.service_id = s.id WHERE request_id = $requestID;";
+    $result = mysqli_query($link, $sql);
+    $row = mysqli_fetch_array($result);
+
+    $message .= "<p>Request ID: $requestID</p>";
+    $service = $row['service'];
+    $message .= "<p>Service: $service</p>";
+    $time = $row['requested_at'];
+    $message .= "<p>Requested at: $time</p>";
+    $message .= "<br>";
+    $message .= "<p>Don't forget to rate our work!</p>";
+
+    $emailTo = $row['email'];
 
 // Instantiation and passing `true` enables exceptions
     $mail = new PHPMailer(true);
