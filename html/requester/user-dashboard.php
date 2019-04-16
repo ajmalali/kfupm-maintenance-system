@@ -15,6 +15,29 @@
 </head>
 
 <body>
+
+<!-- Profile Modal -->
+<div class="modal fade" id="profile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Profile</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="save-profile">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!--Navigation-->
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
     <div class="container">
@@ -30,7 +53,7 @@
             <!-- Add spacer, to align navigation to the right in desktop -->
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="#request-service">Request Service</a>
-                <a class="nav-item nav-link" href="#">Profile</a>
+                <a class="nav-item nav-link" data-toggle="modal" data-target="#profile" id="profile-link">Profile</a>
                 <a class="nav-item nav-link" href="../../index.php">
                     <button class="btn btn-outline-warning btn-sm" type="button">Sign Out</button>
                 </a>
@@ -130,5 +153,12 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="user-dashboard.js"></script>
+
+<script>
+    $('#navbarSupportedContent .navbar-nav a').on('click', function () {
+        $('#navbarSupportedContent .navbar-nav').find('a.active').removeClass('active');
+        $(this).addClass('active');
+    });
+</script>
 </body>
 </html>

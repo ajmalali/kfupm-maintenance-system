@@ -19,6 +19,8 @@
         $_SESSION["name"] = $name;
         $sql = "INSERT INTO USER VALUES ($id, '$name', '$password', $type)";
         $result = mysqli_query($link, $sql);
+        $sql = "INSERT INTO requester (Id, mobile, email) VALUES ($id, $phone, '$email')";
+        $result = mysqli_query($link, $sql);
     }
 
     function checkIDExists($id, $link) {

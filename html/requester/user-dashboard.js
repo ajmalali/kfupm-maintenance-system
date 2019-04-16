@@ -1,3 +1,13 @@
+function getProfile() {
+    $.ajax({
+        type: "POST",
+        url: "getProfile.php",
+        success: function (result) {
+            $('#profile .modal-body').append(result);
+        }
+    });
+}
+
 function init() {
     $('#serviceType').on('change', function () {
         let service = $('#service');
@@ -21,6 +31,11 @@ function init() {
 
     initCancelButtons();
     initRateButtons();
+
+    $('#profile-link').on('click', function () {
+        $('#profile .modal-body').empty();
+        getProfile();
+    });
 }
 
 function createRequest(requestData) {
