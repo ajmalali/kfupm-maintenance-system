@@ -41,7 +41,7 @@
                     echo "</div></div></div>";
                 }
             } else {
-                echo "<div class=\"alert alert-info\" role=\"alert\">You do not have any on going requests</div>";
+//                echo "<div class=\"alert alert-info\" role=\"alert\">You do not have any on going requests</div>";
             }
         ?>
     </div>

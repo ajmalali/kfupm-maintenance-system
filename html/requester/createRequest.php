@@ -27,17 +27,17 @@
 
 
     // Add to Ongoing requests
-    echo "<div class=\"col-lg-4  col-md-6\"><div class=\"card mb-4\"\"><div class=\"card-body d-flex flex-column justify-content-between\">";
+    echo "<div class=\"col-lg-4 col-md-6\"><div class=\"card mb-4\"\"><div class=\"card-body d-flex flex-column justify-content-between\">";
     echo "<h5 class=\"card-title\">$serviceName</h5>";
     echo "<h6 class=\"card-subtitle mb-3 text-muted\">Requested at: $time</h6>";
     echo "<p class=\"card-text\">Request ID: $requestID</p>";
     echo "<p class=\"card-text\">Status: Processing</p>";
     echo "<div class=\"row mt-3\">
                         <div class=\"col\">
-                            <a href=\"#\" class=\"btn btn-primary w-100\">Rate</a>
+                            <button class=\"btn btn-primary w-100 rate\">Rate</button>
                         </div>
                         <div class=\"col\">
-                            <a href=\"#\" class=\"btn btn-outline-danger w-100\">Cancel</a>
+                            <button class=\"btn btn-outline-danger w-100 cancel\">Cancel</button>
                         </div>
                     </div>";
     echo "</div></div></div>";

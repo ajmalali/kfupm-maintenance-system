@@ -15,8 +15,29 @@ function initCancelButtons() {
     });
 }
 
-function init() {
+function initRateButtons() {
+    $(document).on('click', '.rate',function () {
+        let rating = prompt("Enter a rating between 1-5 \n(1 being the worst and 5 being the best)", "5");
+        rating = Number(rating);
+        if (rating) {
+            let requestCard = $(this).parents('div.col-lg-4 ')[0];
+            let requestText = $(requestCard).find('p.card-text')[0].innerHTML;
+            let requestID = requestText.substr(-1);
+            $.ajax({
+                type: "POST",
+                url: "completeRequest.php",
+                data: {"rating" : rating, "requestID": requestID},
+                success: function (result) {
+                    $(requestCard).fadeOut();
+                    alert(result);
+                    $('#previous-requests').find('tbody:last').append(result);
+                }
+            });
+        }
+    });
+}
 
+function init() {
     $('#serviceType').on('change', function () {
         let service = $('#service');
         let serviceType = $(this).val();
@@ -38,6 +59,7 @@ function init() {
     });
 
     initCancelButtons();
+    initRateButtons();
 }
 
 function createRequest(requestData) {

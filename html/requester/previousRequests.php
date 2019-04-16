@@ -7,7 +7,7 @@
         </div>
     </div>
 
-    <table class="table">
+    <table class="table" id="previous-requests">
         <thead class="thead-dark">
         <tr>
             <th scope="col">Request ID</th>
@@ -23,7 +23,7 @@
 
             $userID = $_SESSION['id'];
             $sql = "SELECT request_id, status, service, rating, requested_at FROM request INNER JOIN service s on request.service_id = s.id
-                    WHERE user_id = '$userID';";
+                    WHERE user_id = '$userID' AND status = 'Completed' OR status = 'Cancelled';";
 
             if ($result = mysqli_query($link, $sql)) {
                 if (mysqli_num_rows($result) > 0) {

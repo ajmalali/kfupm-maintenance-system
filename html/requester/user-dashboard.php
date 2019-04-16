@@ -115,38 +115,38 @@
     </div>
 </div>
 
-<?php //require ('ongoingRequests.php'); ?>
+<?php require ('ongoingRequests.php'); ?>
 
-<div class="container mb-4">
-    <div class="row mt-3">
-        <div class="col-sm-12">
-            <h2 class="display-5">Your ongoing requests</h2>
-            <hr>
-        </div>
-    </div>
-
-    <div class="row mt-3">
-        <div class="col-lg-4 col-md-6">
-            <div class="card mb-2">
-                <div class="card-body d-flex flex-column justify-content-between">
-                    <h5 class="card-title">Covering surfaces with primer and undercoat</h5>
-                    <h6 class="card-subtitle mb-3 text-muted">Requested at: 10-3-2019</h6>
-                    <p class="card-text">Request ID: 1</p>
-                    <p class="card-text">Status: Processing</p>
-                    <div class="row mt-3">
-                        <div class="col">
-                            <button class="btn btn-primary w-100 rate">Rate</button>
-                        </div>
-                        <div class="col">
-                            <button class="btn btn-outline-danger w-100 cancel">Cancel</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--<div class="container mb-4">-->
+<!--    <div class="row mt-3">-->
+<!--        <div class="col-sm-12">-->
+<!--            <h2 class="display-5">Your ongoing requests</h2>-->
+<!--            <hr>-->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
+<!--    <div class="row mt-3">-->
+<!--        <div class="col-lg-4 col-md-6">-->
+<!--            <div class="card mb-2">-->
+<!--                <div class="card-body d-flex flex-column justify-content-between">-->
+<!--                    <h5 class="card-title">Covering surfaces with primer and undercoat</h5>-->
+<!--                    <h6 class="card-subtitle mb-3 text-muted">Requested at: 10-3-2019</h6>-->
+<!--                    <p class="card-text">Request ID: 1</p>-->
+<!--                    <p class="card-text">Status: Processing</p>-->
+<!--                    <div class="row mt-3">-->
+<!--                        <div class="col">-->
+<!--                            <button class="btn btn-primary w-100 rate">Rate</button>-->
+<!--                        </div>-->
+<!--                        <div class="col">-->
+<!--                            <button class="btn btn-outline-danger w-100 cancel">Cancel</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!---->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 <?php include ('previousRequests.php'); ?>
 
