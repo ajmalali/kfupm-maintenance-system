@@ -1,16 +1,15 @@
 <?php
-require '../../../config.php';
+    require '../../../config.php';
 
-$id = $_POST["id"];
+    $id = $_POST["id"];
 
-ChangeStatus($id, $link);
+    ChangeStatus($id, $link);
 
-function ChangeStatus($id, $link) {
-  // UPDATE the status column of the receptionist
-  $sql = "DELETE FROM users WHERE id = $id";
-  mysqli_query($link,$sql);
-  echo $sql;
-}
-
-
- ?>
+    function ChangeStatus($id, $link) {
+        // UPDATE the status column of the receptionist
+        $sql = "DELETE FROM user WHERE id = $id";
+        mysqli_query($link, $sql);
+        $sql = "DELETE FROM requester WHERE id = $id";
+        mysqli_query($link, $sql);
+        echo $sql;
+    }

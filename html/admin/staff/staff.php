@@ -16,7 +16,7 @@
 <!--Navigation-->
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="../../index.php">KFUPM Maintenance</a>
+        <a class="navbar-brand" href="../../../index.php">KFUPM Maintenance</a>
         <!--Collapse button-->
         <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
                 class="navbar-toggler"
@@ -26,12 +26,12 @@
         <!--Links-->
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <div class="navbar-nav ">
-                <a class="nav-item nav-link" href="requests.html">Requests</a>
-                <a class="nav-item nav-link" href="services.html">Services</a>
+                <a class="nav-item nav-link" href="../requests.php">Requests</a>
+                <a class="nav-item nav-link" href="../services/services.php">Services</a>
                 <a class="nav-item nav-link active" href="#">Staff</a>
-                <a class="nav-item nav-link" href="users.html">Users</a>
-                <a class="nav-item nav-link" href="reports.html">Generate Report</a>
-                <a class="nav-item nav-link" href="../../index.php">
+                <a class="nav-item nav-link" href="../users/users.php">Users</a>
+                <a class="nav-item nav-link" href="../reports.html">Generate Report</a>
+                <a class="nav-item nav-link" href="../../../index.php">
                     <button class="btn btn-warning btn-sm" type="button">Sign Out</button>
                 </a>
             </div>
@@ -81,7 +81,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Please Enter the Receptionist Details</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Please Enter the Staff Details</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -95,6 +95,26 @@
                     <div class="form-group">
                         <label for="first-name" class="col-form-label">ID:</label>
                         <input type="text" class="form-control" id="id">
+                    </div>
+                    <div class="form-group">
+                        <label for="serviceType">Service type</label>
+                        <select name="serviceType" id="serviceType" class="form-control" required>
+                            <option value="" disabled selected>Select a service type</option>
+                            <?php
+                                require_once('../../../config.php');
+
+                                $sql = "SELECT name, type_id FROM servicetype";
+                                $result = mysqli_query($link, $sql);
+                                echo "HELLOw";
+                                if (mysqli_num_rows($result) > 0) {
+                                    while ($row = mysqli_fetch_array($result)) {
+                                        $name = $row['name'];
+                                        $id = $row['type_id'];
+                                        echo "<option value=\"$id\">$name</option>";
+                                    }
+                                }
+                            ?>
+                        </select>
                     </div>
                 </form>
 

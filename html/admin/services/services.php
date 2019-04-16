@@ -9,8 +9,8 @@
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
               rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link href="../../styles/general-styles.css" rel="stylesheet">
-        <link href="../../styles/admin.css" rel="stylesheet">
+        <link href="../../../styles/general-styles.css" rel="stylesheet">
+        <link href="../../../styles/admin.css" rel="stylesheet">
     </head>
     <body>
         <!--Navigation-->
@@ -26,12 +26,12 @@
                 <!--Links-->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <div class="navbar-nav ">
-                        <a class="nav-item nav-link" href="requests.html">Requests</a>
+                        <a class="nav-item nav-link" href="../requests.php">Requests</a>
                         <a class="nav-item nav-link active" href="#">Services</a>
-                        <a class="nav-item nav-link" href="staff.html">Staff</a>
-                        <a class="nav-item nav-link" href="users.html">Users</a>
-                        <a class="nav-item nav-link" href="reports.html">Generate Report</a>
-                        <a class="nav-item nav-link" href="../../index.php">
+                        <a class="nav-item nav-link" href="../staff/staff.php">Staff</a>
+                        <a class="nav-item nav-link" href="../users/users.php">Users</a>
+                        <a class="nav-item nav-link" href="../reports.html">Generate Report</a>
+                        <a class="nav-item nav-link" href="../../../index.php">
                             <button class="btn btn-warning btn-sm" type="button">Sign Out</button>
                         </a>
                     </div>

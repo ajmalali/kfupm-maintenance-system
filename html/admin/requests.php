@@ -26,11 +26,11 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <div class="navbar-nav ">
                         <a class="nav-item nav-link active" href="#">Requests</a>
-                        <a class="nav-item nav-link" href="services.html">Services</a>
-                        <a class="nav-item nav-link" href="staff.html">Staff</a>
-                        <a class="nav-item nav-link" href="users.html">Users</a>
+                        <a class="nav-item nav-link" href="services/services.php">Services</a>
+                        <a class="nav-item nav-link" href="staff/staff.php">Staff</a>
+                        <a class="nav-item nav-link" href="users/users.php">Users</a>
                         <a class="nav-item nav-link" href="reports.html">Generate Report</a>
-                        <a class="nav-item nav-link" href="../landing.html">
+                        <a class="nav-item nav-link" href="../../index.php">
                             <button class="btn btn-warning btn-sm" type="button">Sign Out</button>
                         </a>
                     </div>
