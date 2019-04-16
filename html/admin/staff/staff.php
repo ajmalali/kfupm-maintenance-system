@@ -51,25 +51,27 @@
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Full Name</th>
+            <th scope="col">Type</th>
             <th scope="col">Action</th>
         </tr>
         </thead>
         <tbody>
         <?php
-            require '../../../config.php';
-            $result = mysqli_query($link, "SELECT * FROM user  where type = 2");
+            require_once '../../../config.php';
+
+            $sql = "SELECT id, user.name as uname, s.name as sname FROM user NATURAL JOIN staff INNER JOIN servicetype s on staff.type_id = s.type_id;";
+            $result = mysqli_query($link, $sql);
 
             while ($row = mysqli_fetch_array($result)) {
                 echo "<tr>";       // id of each serial number is in each row so easier to access when we need to delete
 
                 echo "<td>" . $row["id"] . "</td>";
-                echo "<td>" . $row["name"] . "</td>";
+                echo "<td>" . $row["uname"] . "</td>";
+                echo "<td>" . $row["sname"] . "</td>";
                 echo "<td>" . "<button type = \"button\" class = \"btn btn-danger mx-auto\">Remove" . "</button>" . "</td>";
                 // type = button needed to avoid refresh
                 echo "</tr>";
             }
-
-            mysqli_close($link);
         ?>
         </tbody>
     </table>
@@ -93,19 +95,17 @@
                         <input type="text" class="form-control" id="name-field">
                     </div>
                     <div class="form-group">
-                        <label for="first-name" class="col-form-label">ID:</label>
+                        <label for="id" class="col-form-label">ID:</label>
                         <input type="text" class="form-control" id="id">
                     </div>
                     <div class="form-group">
-                        <label for="serviceType">Service type</label>
+                        <label for="serviceType">Service type:</label>
                         <select name="serviceType" id="serviceType" class="form-control" required>
                             <option value="" disabled selected>Select a service type</option>
                             <?php
-                                require_once('../../../config.php');
-
                                 $sql = "SELECT name, type_id FROM servicetype";
                                 $result = mysqli_query($link, $sql);
-                                echo "HELLOw";
+
                                 if (mysqli_num_rows($result) > 0) {
                                     while ($row = mysqli_fetch_array($result)) {
                                         $name = $row['name'];
@@ -114,6 +114,7 @@
                                     }
                                 }
                             ?>
+
                         </select>
                     </div>
                 </form>

@@ -1,11 +1,12 @@
 function addStaff() {
     var id = $('#id').val();
     var name = $('#name-field').val();
+    var type = $('#serviceType').val();
 // add to database
     $.ajax({
         type: "POST",
         url: "add-staff.php",
-        data: {"id": id, "name": name,},
+        data: {"id": id, "name": name, "type": type},
         success: function (result) {
             // result has the new row (Use echo from the php file)
             $('table').find('tbody:last').append(result);
