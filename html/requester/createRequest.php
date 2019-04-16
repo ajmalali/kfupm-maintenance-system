@@ -31,7 +31,7 @@
     echo "<h5 class=\"card-title\">$serviceName</h5>";
     echo "<h6 class=\"card-subtitle mb-3 text-muted\">Requested at: $time</h6>";
     echo "<p class=\"card-text\">Request ID: $requestID</p>";
-    echo "<p class=\"card-text\">Status: Processing</p>";
+    echo "<p class=\"card-text\">Status: <span class='text-primary'>Processing</span></p>";
     echo "<div class=\"row mt-3\">
                         <div class=\"col\">
                             <button class=\"btn btn-primary w-100 rate\">Rate</button>

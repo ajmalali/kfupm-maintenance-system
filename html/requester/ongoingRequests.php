@@ -29,7 +29,14 @@
                     $requestID = $row['request_id'];
                     echo "<p class=\"card-text\">Request ID: $requestID</p>";
                     $status = $row['status'];
-                    echo "<p class=\"card-text\">Status: $status</p>";
+                    if ($status == "Processing") {
+                        $class = "text-primary";
+                    } else if ($status == "Cancelled") {
+                        $class = "text-danger";
+                    } else {
+                        $class = "text-success";
+                    }
+                    echo "<p class=\"card-text\">Status: <span class='$class'>$status</span></p>";
                     echo "<div class=\"row mt-3\">
                         <div class=\"col\">
                             <button class=\"btn btn-primary w-100 rate\">Rate</button>
