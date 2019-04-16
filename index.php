@@ -24,7 +24,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!--Links-->
-        <div class="collapse navbar-collapse justify-content-end" id="topheader">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="#">Home</a>
                 <a class="nav-item nav-link" href="#about-us">About</a>
@@ -136,8 +136,8 @@
         crossorigin="anonymous"></script>
 
 <script>
-    $('#topheader .navbar-nav a').on('click', function () {
-        $('#topheader .navbar-nav').find('a.active').removeClass('active');
+    $('#navbarSupportedContent .navbar-nav a').on('click', function () {
+        $('#navbarSupportedContent .navbar-nav').find('a.active').removeClass('active');
         $(this).addClass('active');
     });
 </script>
