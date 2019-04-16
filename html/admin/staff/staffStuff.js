@@ -35,3 +35,18 @@ function addStaff() {
   }
 
 );
+
+function deleteRow(id) {
+  $.ajax({
+    type : "POST",
+    url : "delete-staff.php",
+    data : {"id" : id},
+    success : function (result) {
+      var sr = id;
+      sr = '#' + sr;
+      // remove from front end
+      $(sr).fadeOut(1000);
+    }
+
+  });
+}
