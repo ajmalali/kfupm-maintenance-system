@@ -15,7 +15,7 @@
         if ($type == 1) {  // Admin
             $url = '../admin/requests.php';
         } else if ($type == 2) {   //  Staff
-            $url = '../staff-dashboard.html';
+            $url = '../staff/staff-dashboard.php';
         } else if ($type == 3) {  // Requester
             $url = '../requester/user-dashboard.php';
         }

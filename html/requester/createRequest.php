@@ -11,8 +11,8 @@
     $comment = $_POST['comment'];
     $userID = $_SESSION['id'];
 
-    $sql = "INSERT INTO request (location, time, status, comments, user_id, service_id,  requested_at)
-    VALUES ('$location', '$time', 'Processing', '$comment', '$userID', '$service', NOW())";
+    $sql = "INSERT INTO request (location, time, status, comments, user_id, service_id,  requested_at, building_number, room_number)
+    VALUES ('$location', '$time', 'Processing', '$comment', '$userID', '$service', NOW(), '$buildingNumber', '$roomNumber')";
 
     if (!mysqli_query($link, $sql)) {
         echo "QUERY ERROR " . mysqli_error($link);

@@ -18,13 +18,13 @@
         $_SESSION["id"] = $id;
         $_SESSION["name"] = $name;
         $sql = "INSERT INTO USER VALUES ($id, '$name', '$password', $type)";
-        $result = mysqli_query($link, $sql);
+        mysqli_query($link, $sql);
         $sql = "INSERT INTO requester (Id, mobile, email) VALUES ($id, $phone, '$email')";
-        $result = mysqli_query($link, $sql);
+        mysqli_query($link, $sql);
     }
 
     function checkIDExists($id, $link) {
-        $sql = "SELECT * from user where id = $id";
+        $sql = "SELECT id from user where id = $id";
         echo $sql;
         $result = mysqli_query($link, $sql);
         if (mysqli_num_rows($result) > 0) {
