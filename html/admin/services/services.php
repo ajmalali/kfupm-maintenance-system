@@ -49,22 +49,22 @@
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">ID</th>
+                        <th scope="col">Service Type</th>
                         <th scope="col">Service</th>
                         <th scope="col">Action</th>
-
                     </tr>
                 </thead>
                 <tbody>
                   <?php
-                  require '../../../config.php';
-                  $result = mysqli_query($link,"SELECT * FROM service");
+                  require_once '../../../config.php';
+                  $result = mysqli_query($link,"SELECT id, service, name From service natural join servicetype");
 
                   while($row = mysqli_fetch_array($result))
                   {
                     $id = $row["id"];
                     echo "<tr id = \"$id\">";       // id of each serial number is in each row so easier to access when we need to delete
-
                     echo "<td>" . $row["id"] . "</td>";
+                      echo "<td>" . $row["name"] . "</td>";
                     echo "<td>" . $row["service"] . "</td>";
                     echo "<td>" . "<button type = \"button\" onclick= \"deleteRow($id)\" class = \"btn btn-danger mx-auto\">Remove" . "</button>" . "</td>";
                     // type = button needed to avoid refresh
@@ -91,17 +91,13 @@
               <div class="modal-body">
 
                 <form>
+                    <div class="form-group">
+                        <label for="service-type" class="col-form-label">Service Type:</label>
+                        <input type="number" class="form-control" id="service-type">
+                    </div>
                   <div class="form-group">
                     <label for="first-name" class="col-form-label">Service:</label>
                     <input type="text" class="form-control" id="service-field">
-                  </div>
-                  <div class="form-group">
-                    <label for="first-name" class="col-form-label">ID:</label>
-                    <input type="number" class="form-control" id="id">
-                  </div>
-                  <div class="form-group">
-                    <label for="first-name" class="col-form-label">Service Type:</label>
-                    <input type="number" class="form-control" id="service-type">
                   </div>
                 </form>
 

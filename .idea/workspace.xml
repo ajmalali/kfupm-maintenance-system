@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e692440-d778-4923-bdd3-24dff2130978" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/admin/requests/assignRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/admin/requests/requests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/admin/requests/requests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/admin/reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin/reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/admin/requests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/admin/requests.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/admin/services/add-services.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin/services/add-services.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/admin/services/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin/services/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/admin/staff/staff.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin/staff/staff.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/admin/users/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin/users/users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/signIn/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/signIn/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,47 +33,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/admin/services/services.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/admin/requests/requests.php">
+        <entry file="file://$PROJECT_DIR$/html/admin/services/add-services.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="112" column="101" selection-start-line="112" selection-start-column="101" selection-end-line="112" selection-end-column="101" />
+            <state relative-caret-position="385">
+              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/staff/staff.js">
+        <entry file="file://$PROJECT_DIR$/html/admin/services/serviceOps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/staff/assignedJobs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/admin/requests/requests.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/admin/requests/assignRequest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="23">
+              <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -94,7 +64,7 @@
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/471fc104-fe9c-4655-a0bf-f4b65a6db622/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
+              <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -124,7 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html/admin/users.html" />
         <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/html/user-dashboard.html" />
         <option value="$PROJECT_DIR$/servicesOffered.php" />
@@ -146,7 +115,6 @@
         <option value="$PROJECT_DIR$/html/requester/user-dashboard.js" />
         <option value="$PROJECT_DIR$/html/admin/users/users.php" />
         <option value="$PROJECT_DIR$/html/admin/users/usersStuff.js" />
-        <option value="$PROJECT_DIR$/html/admin/services/services.php" />
         <option value="$PROJECT_DIR$/html/admin/users/delete-users.php" />
         <option value="$PROJECT_DIR$/html/admin/staff/staffStuff.js" />
         <option value="$PROJECT_DIR$/html/admin/staff/add-staff.php" />
@@ -169,12 +137,14 @@
         <option value="$PROJECT_DIR$/html/admin/requests.php" />
         <option value="$PROJECT_DIR$/styles/admin.css" />
         <option value="$PROJECT_DIR$/html/signIn/auth.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/471fc104-fe9c-4655-a0bf-f4b65a6db622/console.sql" />
         <option value="$PROJECT_DIR$/html/requester/user-dashboard.php" />
         <option value="$PROJECT_DIR$/styles/index.css" />
         <option value="$PROJECT_DIR$/html/admin/requests/assignRequest.php" />
         <option value="$PROJECT_DIR$/html/admin/requests/requests.js" />
         <option value="$PROJECT_DIR$/html/admin/requests/requests.php" />
+        <option value="$PROJECT_DIR$/html/admin/services/services.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/471fc104-fe9c-4655-a0bf-f4b65a6db622/console.sql" />
+        <option value="$PROJECT_DIR$/html/admin/services/add-services.php" />
       </list>
     </option>
   </component>
@@ -220,13 +190,7 @@
               <item name="Project" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="requests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Project" type="b2602c69:ProjectViewProjectNode" />
@@ -262,7 +226,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -315,20 +279,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105927000" />
+    <option name="totallyTimeSpent" value="106954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16240682" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16240682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32769832" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="0" visible="true" weight="0.32665965" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32982087" />
       <window_info anchor="bottom" id="Run" order="3" />
@@ -338,7 +302,7 @@
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946752" weight="0.33289987" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946752" weight="0.33192834" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5005325" side_tool="true" weight="0.3284974" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32982087" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -357,26 +321,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/admin/admin-dashboard.html" />
-    <entry file="file://$PROJECT_DIR$/html/admin/staff.html" />
-    <entry file="file://$PROJECT_DIR$/html/admin/requests.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/admin/services.html" />
     <entry file="file://$PROJECT_DIR$/html/signup.html" />
     <entry file="file://$PROJECT_DIR$/html/signin.html" />
     <entry file="file://$PROJECT_DIR$/scripts/authentication.js" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/admin/users.html" />
     <entry file="file://$PROJECT_DIR$/html/requester/cancelRequest.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -415,8 +363,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/admin/users/usersStuff.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="314">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -521,13 +469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/admin/services/services.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1206">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/admin/users/users.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
@@ -563,20 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/admin/staff/staffStuff.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/admin/staff/add-staff.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/requester/completeRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -598,16 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-177">
-          <caret line="11" column="52" lean-forward="true" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-          <folding>
-            <marker date="1555498813574" expanded="true" signature="947:996" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/requester/user-dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2806">
@@ -617,15 +534,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/admin/staff/staff.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/471fc104-fe9c-4655-a0bf-f4b65a6db622/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        <state relative-caret-position="355">
+          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -657,24 +567,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/admin/requests/requests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="112" column="101" selection-start-line="112" selection-start-column="101" selection-end-line="112" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="824">
+          <caret line="665" column="12" lean-forward="true" selection-start-line="665" selection-start-column="12" selection-end-line="665" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="52" lean-forward="true" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/staff/staff.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/staff/assignedJobs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/admin/requests/requests.php">
+    <entry file="file://$PROJECT_DIR$/html/admin/staff/staffStuff.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="112" column="101" selection-start-line="112" selection-start-column="101" selection-end-line="112" selection-end-column="101" />
+        <state relative-caret-position="552">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/admin/staff/add-staff.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/admin/services/serviceOps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/471fc104-fe9c-4655-a0bf-f4b65a6db622/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/admin/services/services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/admin/services/add-services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
         </state>
       </provider>
     </entry>
