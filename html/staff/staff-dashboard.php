@@ -37,9 +37,15 @@
         </div>
     </div>
 </nav>
+
 <?php require "assignedJobs.php"?>
 
 <?php require "completedJobs.php"?>
+
+<div class="container">
+  <div id="map" style="width: 100%; height: 400px; background: grey; display:none"/>
+</div>
+
 
 <script
         src="https://code.jquery.com/jquery-3.4.0.min.js"
@@ -52,5 +58,14 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="staff.js" type="text/javascript"></script>
+
+<!-- HERE Maps Stuff -->
+<link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1549984893" />
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+
 </body>
+
 </html>

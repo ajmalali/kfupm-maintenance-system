@@ -40,7 +40,9 @@
                             <button class=\"btn btn-primary w-100 complete\">Complete</button>
                         </div>
                         <div class=\"col\">
-                            <button class=\"btn btn-dark w-100 location\">Location</button>
+                            <button class=\"btn btn-dark w-100 location\" data-toggle=\"modal\" data-target=\".bd-example-modal-lg\" onclick=\"showLocation($requestID)\">
+                            Location
+                            </button>
                         </div>
                     </div>";
                     echo "</div></div></div>";
@@ -49,4 +51,3 @@
         ?>
     </div>
 </div>
-
