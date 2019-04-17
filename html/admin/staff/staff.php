@@ -26,7 +26,7 @@
         <!--Links-->
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <div class="navbar-nav ">
-                <a class="nav-item nav-link" href="../requests.php">Requests</a>
+                <a class="nav-item nav-link" href="../requests/requests.php">Requests</a>
                 <a class="nav-item nav-link" href="../services/services.php">Services</a>
                 <a class="nav-item nav-link active" href="#">Staff</a>
                 <a class="nav-item nav-link" href="../users/users.php">Users</a>

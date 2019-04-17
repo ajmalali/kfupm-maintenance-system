@@ -13,7 +13,7 @@
             $name = $row['name'];
         }
         if ($type == 1) {  // Admin
-            $url = '../admin/requests.php';
+            $url = '../admin/requests/requests.php';
         } else if ($type == 2) {   //  Staff
             $url = '../staff/staff-dashboard.php';
         } else if ($type == 3) {  // Requester
