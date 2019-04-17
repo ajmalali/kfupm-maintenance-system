@@ -23,7 +23,7 @@
 
             $userID = $_SESSION['id'];
             $sql = "SELECT request_id, status, service, rating, requested_at FROM request INNER JOIN service s on request.service_id = s.id
-                    WHERE user_id = '$userID' AND (status = 'Completed' OR status = 'Cancelled');";
+                    WHERE user_id = '$userID' AND (status = 'Completed' OR status = 'Cancelled' OR status = 'Rejected');";
 
             if ($result = mysqli_query($link, $sql)) {
                 if (mysqli_num_rows($result) > 0) {
@@ -34,12 +34,12 @@
                         echo "<td>" . $row["rating"] . "</td>";
                         echo "<td>" . $row["requested_at"] . "</td>";
                         $status = $row["status"];
-                        if ($status == "Processing") {
-                            $class = "text-primary";
+                        if ($status == "Completed") {
+                            $class = "text-success";
                         } else if ($status == "Cancelled") {
                             $class = "text-danger";
                         } else {
-                            $class = "text-success";
+                            $class = "text-danger";
                         }
                         echo "<td class='$class'>" . $status . "</td>";
                         echo "</tr>";

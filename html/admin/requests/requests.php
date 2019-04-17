@@ -12,6 +12,11 @@
         <link href="../../../styles/general-styles.css" rel="stylesheet">
         <link href="../../../styles/admin.css" rel="stylesheet">
     </head>
+    <style>
+        .name {
+            font-size: 1.05rem;
+        }
+    </style>
     <body>
         <!--Navigation-->
         <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
@@ -92,34 +97,15 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Please Enter the Staff Details</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Select the staff(s) for this job</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="first-name" class="col-form-label">Name:</label>
-                                <input type="text" class="form-control" id="name-field">
-                            </div>
-                            <div class="form-group">
-                                <label for="id" class="col-form-label">ID:</label>
-                                <input type="text" class="form-control" id="id">
-                            </div>
-                            <div class="form-group">
-                                <label for="serviceType">Service type:</label>
-                                <select name="serviceType" id="serviceType" class="form-control" required>
-                                    <option value="" disabled selected>Select a service type</option>
-                                </select>
-                            </div>
-                        </form>
-
-                    </div>
+                    <div class="modal-body"></div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" onclick="addStaff()" data-dismiss="modal">Save changes
-                        </button>
+                        <button type="button" class="btn btn-primary" onclick="assignStaff()" data-dismiss="modal">Assign</button>
                     </div>
                 </div>
             </div>

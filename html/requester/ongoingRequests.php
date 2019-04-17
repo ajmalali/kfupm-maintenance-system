@@ -31,10 +31,8 @@
                     $status = $row['status'];
                     if ($status == "Processing") {
                         $class = "text-primary";
-                    } else if ($status == "Cancelled") {
-                        $class = "text-danger";
-                    } else {
-                        $class = "text-success";
+                    } else if ($status == "In-progress") {
+                        $class = "text-warning";
                     }
                     echo "<p class=\"card-text\">Status: <span class='$class'>$status</span></p>";
                     echo "<div class=\"row mt-3\">
