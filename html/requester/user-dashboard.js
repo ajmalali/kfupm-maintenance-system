@@ -101,5 +101,25 @@ function initRateButtons() {
     });
 }
 
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(displayLocation);
+  } else {
+    alert("Location is not supported in your Browser");
+  }
+}
+function displayLocation(pos) {
+    var crd = pos.coords;
+    console.log('Your current position is:');
+    console.log(`Latitude : ${crd.latitude}`);
+    console.log(`Longitude: ${crd.longitude}`);
+    var ltt = crd.latitude.toString();
+    var lng = crd.longitude.toString();
+    var loc = ltt + "," + lng;
+    $('#location').val(loc);
+}
+
+
+
 
 init();

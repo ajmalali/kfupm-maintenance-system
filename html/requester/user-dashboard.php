@@ -110,8 +110,17 @@
                         </select>
                     </div>
                     <div class="form-group">
+
                         <label for="location">Location</label>
-                        <input type="text" class="form-control" id="location" name="location" required>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <button class="btn btn-info" type="button" onclick="getLocation()">
+                              Get Location
+                            </button>
+                          </div>
+                           <input type="text" class="form-control" id="location" name="location" required disabled>
+                        </div>
+
                     </div>
                     <div class="form-group">
                         <label for="buildingNumber">Building Number</label>
