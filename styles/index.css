@@ -9,7 +9,7 @@ a.nav-link {
 
 header.overlay {
     background-repeat: no-repeat;
-    background-image: url("http://maintenance-service-dubai.com/wp-content/uploads/revslider/fixology-mainslider/banner-bg3.jpg");
+    background-image: url(../images/background.jpg);
     background-size: cover;
     background-position: center center;
     width: 100%;
