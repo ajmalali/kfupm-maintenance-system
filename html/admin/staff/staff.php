@@ -30,7 +30,7 @@
                 <a class="nav-item nav-link" href="../services/services.php">Services</a>
                 <a class="nav-item nav-link active" href="#">Staff</a>
                 <a class="nav-item nav-link" href="../users/users.php">Users</a>
-                <a class="nav-item nav-link" href="../reports.html">Generate Report</a>
+                <a class="nav-item nav-link" href="../report.php">Generate Report</a>
                 <a class="nav-item nav-link" href="../../../index.php">
                     <button class="btn btn-warning btn-sm" type="button">Sign Out</button>
                 </a>
