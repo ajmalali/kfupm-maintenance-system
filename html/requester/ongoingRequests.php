@@ -15,8 +15,8 @@
 
             $sql = "SELECT request_id, service, status, requested_at 
                     FROM request INNER JOIN service ON request.service_id = service.id 
-                    WHERE user_id = '$userID'
-                    AND status='Processing' OR status='In-progress';";
+                    WHERE user_id = $userID
+                    AND (status='Processing' OR status='In-progress');";
             $result = mysqli_query($link, $sql);
 
             if (mysqli_num_rows($result) > 0) {
