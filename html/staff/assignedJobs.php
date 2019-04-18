@@ -16,7 +16,7 @@
 
             $sql = "SELECT request_id, location, time, comments, building_number, room_number, service
                     from assignment natural join request inner join service s on request.service_id = s.id AND NOT status = 'Completed'
-                    WHERE user_id = $userID;";
+                    WHERE staff_id = $userID;";
 
             $result = mysqli_query($link, $sql);
 
